@@ -1,9 +1,15 @@
 package com.thoughtworks.computerinventory.entity;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "computer")
 public class ComputerEntity {
 
+  @Id
   private int id;
   private String type;
   private String owner;

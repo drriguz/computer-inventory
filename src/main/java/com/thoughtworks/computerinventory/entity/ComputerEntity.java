@@ -15,6 +15,9 @@ public class ComputerEntity {
   private String owner;
   private Date createTime;
 
+  public ComputerEntity() {
+  }
+
   public ComputerEntity(int id, String type, String owner, Date createTime) {
     this.id = id;
     this.type = type;
@@ -36,5 +39,21 @@ public class ComputerEntity {
 
   public Date getCreateTime() {
     return createTime;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+  public void setOwner(String owner) {
+    this.owner = owner;
+  }
+
+  public void setCreateTime(Date createTime) {
+    this.createTime = createTime;
   }
 }
